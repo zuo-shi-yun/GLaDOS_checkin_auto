@@ -46,7 +46,7 @@ if __name__ == '__main__':
             print('cookie已失效')  # 日志输出
     # --------------------------------------------------------------------------------------------------------#
     if sckey != "":
-        url = 'http://www.pushplus.plus/send?token=' + sckey + '&title=' + email + '签到成功' + '&content=' + sendContent + "&channel=mail"
+        url = 'http://www.pushplus.plus/send?token=' + sckey + '&title=' + email + "&channel=mail" + '签到成功' + '&content=' + sendContent
         print(url)
         requests.get(url)
         print('完成发送邮件')
